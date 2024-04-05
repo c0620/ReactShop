@@ -11,3 +11,113 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.content {
+  min-height: calc(100vh - 70px - 64px);
+}
+
+.cart {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+  z-index: 5;
+  padding: 1rem;
+}
+
+@media (min-width: 767px) {
+  .cart {
+    bottom: unset;
+    top: 5rem;
+  }
+}
+
+.material-icons {
+  font-size: 35px;
+}
+
+.basket-list {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  background-color: white;
+  width: 50rem;
+  max-width: 95%;
+  box-shadow: 1px 3px 8px 5px olive;
+}
+
+.basket-clear {
+  cursor: pointer;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  color: white;
+}
+
+.basket-quantity{
+  cursor: pointer;
+  vertical-align: middle;
+  color: olive;
+  font-size: 20px;
+}
+
+#toast-container {
+  top: 3rem !important;
+  animation: fade-in 250ms ease-in-out;
+  -webkit-animation: fade-in 250ms ease-in-out;
+}
+@keyframes fade-in {
+  from {
+    transform: translateY(2rem);
+    opacity: 0;
+    -webkit-transform: translateY(2rem);
+    -moz-transform: translateY(2rem);
+    -ms-transform: translateY(2rem);
+    -o-transform: translateY(2rem);
+}
+  to {
+    transform: translateY(0rem);
+    opacity: 1;
+    -webkit-transform: translateY(0rem);
+    -moz-transform: translateY(0rem);
+    -ms-transform: translateY(0rem);
+    -o-transform: translateY(0rem);
+}
+}
+
+/* .collection{
+  position: fixed;
+  width: 80vw;
+  top:3rem;
+  display: flex;
+  flex-direction: column;
+} */
+
+
+.collection_outer{
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  top: 10rem;
+  background-color: white;
+  padding: 2rem !important;
+  background-color: olive;
+}
+.li{
+  display: flex;
+}
+
+.collection{
+  background-color: white;
+}
